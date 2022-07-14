@@ -1,0 +1,47 @@
+pip install torch torchvision torchaudio
+pip install easyocr
+
+import easyocr        #main lib to perfrom ocr
+import cv2            #show our image
+from matplotlib import pyplot as plt 
+import numpy as np
+
+import PIL
+from PIL import ImageDraw
+image=PIL.Image.open('.jpg')
+image
+
+IMAGE_PATH='.jpg'
+
+reader = easyocr.Reader(['en'])
+#result=reader.readtext(IMAGE_PATH, contrast_ths=0.05, adjust_contrast=0.7, add_margin=0.45, width_ths=0.7)
+result=reader.readtext(IMAGE_PATH)
+result
+
+pip install aspose-words
+
+
+import aspose.words as aw
+
+# create document object
+doc = aw.Document()
+
+# create a document builder object
+builder = aw.DocumentBuilder(doc)
+
+#looping
+image=cv2.imread(IMAGE_PATH)
+i=0
+for detection in result:
+    builder.write(result[i][1])
+    builder.write('\n')
+    i=i+1
+    
+
+# add text to the document
+"""builder.write(result[0][1])
+builder.write(' ')
+builder.write(result[1][1])"""
+
+# save document
+doc.save(".docx")
