@@ -9804,8 +9804,8 @@ h4, h5, h6 {
 }
 
 .bg-page-header {
-  background: linear-gradient(rgba(55, 55, 63, 0.7), rgba(55, 55, 63, 0.7)), url(../img/carousel-2.jpg), no-repeat center center;
-  background-size: cover;
+  background: linear-gradient(rgba(55, 55, 63, 0.7), rgba(55, 55, 63, 0.7)), url(../img/contact.jpg), no-repeat center center;
+  background-size: 100% 100vh;
 }
 
 .bg-appointment {
@@ -9814,8 +9814,8 @@ h4, h5, h6 {
 }
 
 .bg-action {
-  background: linear-gradient(rgba(55, 55, 63, 0.7), rgba(55, 55, 63, 0.7)), url(../img/carousel-2.jpg), no-repeat center center;
-  background-size: cover;
+  background: linear-gradient(rgba(55, 55, 63, 0.7), rgba(55, 55, 63, 0.7)), url(../img/contact.jpg), no-repeat center center;
+  background-size: 100% 100vh;
 }
 
 .owl-carousel .owl-nav {
