@@ -1,7 +1,8 @@
 body
 {
-    background-color:rgb(3, 199, 225);
+    background-color:#B49C73;
     background-repeat:no-repeat;
+    background-size: 100% 100vh;
 }
 
 .main{
@@ -42,9 +43,11 @@ body
     height: 55px;
     padding-top: 23px;
     padding-left: 28px;
+   
+
 }
 
 #file:hover , input[type=button]:hover , #color:hover{
     cursor: pointer;
-    background-color: dodgerblue;
+    background-color: black;
 }
